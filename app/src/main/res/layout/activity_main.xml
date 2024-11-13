@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Поле для ввода радиуса -->
+    <EditText
+        android:id="@+id/radiusInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите радиус"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="18sp"/>
+
+    <!-- Кнопка для расчета -->
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Рассчитать"
+        android:onClick="calculate"
+        android:textSize="18sp"
+        android:padding="10dp"/>
+
+    <!-- Текстовое поле для отображения результата -->
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="Результат будет показан здесь" />
+
+</LinearLayout>
